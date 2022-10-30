@@ -31,8 +31,7 @@ need to integrate the following scenario in your application:
 2. The application should render the values from the student record with the
    corresponding ID in the database.
 
-You can try out your solution by running `rails s` and visiting
-`localhost:3000/students/2` in the browser.
+You can try out your solution by running `rails s` and visiting `localhost:3000/students/2` in the browser.
 
 There are two failing RSpec specs in this lesson; you can find them in
 `spec/requests/student_spec.rb`. Make sure they pass without breaking the other
@@ -48,7 +47,7 @@ https://www.google.com/search?q=bread
 ```
 
 That `?q=bread` portion of the URL is known as a
-[**query string parameter**][query params]. Query string parameters are another
+[**query string parameters**][query params]. Query string parameters are another
 way of providing data in a request. They're structured as key-value pairs, like
 so:
 
@@ -66,10 +65,11 @@ params
 
 As a bonus deliverable:
 
-**Un-comment out the last test in `/spec/requests/students_spec.rb` to complete the bonus.**
+1. Use query params in the `index` action to customize the sorting order.
 
-1. Use query params in the `index` action to return a list of all students whose
-   first or last name matches the query parameter.
+You'll need to update the `spec/requests/students_spec.rb` file to run the tests
+for the bonus deliverable. Just remove the `skip: "bonus"` to run the bonus
+tests.
 
 ## Resources
 
